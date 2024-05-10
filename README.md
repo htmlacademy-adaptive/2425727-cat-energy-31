@@ -2,7 +2,7 @@
 
 * Студент: [Олег Галкин](https://up.htmlacademy.ru/adaptive/31/user/2425727).
 * Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
-* Сайт: [Мой проект Седона]((https://shtein365.github.io/2425727-cat-energy-31/).
+* Сайт: [Мой проект Кэт Энерджи](https://shtein365.github.io/2425727-cat-energy-31/).
 
 ---
 
