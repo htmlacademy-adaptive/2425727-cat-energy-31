@@ -1,0 +1,40 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: $icon-grey;
+  align-items: center;
+  width: 100%;
+  transition: color 200ms ease-in-out;
+
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    justify-content: flex-end;
+    gap: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 255px;
+  }
+}
+
+.copyright__logo {
+  fill: currentColor;
+}
+
+.copyright__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-text-color;
+}
+
+.copyright:hover,
+.copyright:focus-visible {
+  color: $bg-theme;
+}
+
+.copyright:active {
+  opacity: 0.4;
+}

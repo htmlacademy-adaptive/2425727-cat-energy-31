@@ -1,0 +1,29 @@
+.logo-text:hover,
+.logo-text:focus-visible {
+  opacity: 0.8;
+}
+
+.logo-text:active {
+  opacity: 0.5;
+}
+
+.logo-text--size {
+  width: 101px;
+  height: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+    height: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 22px;
+  }
+}
+
+
+.logo-text--footer {
+  width: 128px;
+  height: 25px;
+}
