@@ -1,0 +1,140 @@
+.advantages__wrapper {
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__list {
+  @include list-reset;
+
+  display: grid;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 34.9%);
+    gap: 37px 137px;
+    position: relative;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 77px;
+    justify-content: flex-start;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      width: calc(100% + (60px));
+      height: 1px;
+      background-color: $border-light;
+      position: absolute;
+      left: -30px;
+      right: auto;
+      bottom: 3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: none;
+    }
+  }
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+  position: relative;
+  counter-increment: my-counter;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    padding: 40px 0 57px;
+    min-height: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 247px;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(my-counter);
+      position: absolute;
+      display: block;
+      font-family: $secondary-font;
+      font-size: 280px;
+      line-height: 280px;
+      font-weight: 400;
+      color: $basic-grey;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &:first-child::after {
+    right: 24px;
+  }
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $bg-theme;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      z-index: 1;
+      margin-right: auto;
+      position: relative;
+      margin-bottom: 31px;
+    }
+  }
+}
+
+
+.advantages__item--nutritious::before {
+  background-image: url("../../icons/stack.svg#leaf");
+  background-size: 25px 28px;
+}
+
+.advantages__item--powder::before {
+  background-image: url("../../icons/stack.svg#hot-water");
+  background-size: 25px 27px;
+}
+
+.advantages__item--cutlery::before {
+  background-image: url("../../icons/stack.svg#cutlery");
+  background-size: 25px 30px;
+}
+
+.advantages__item--alarm::before {
+  background-image: url("../../icons/stack.svg#alarm");
+  background-size: 26px 31px;
+}
+
+.advantages__text {
+  margin: 0;
+  margin-left: 80px;
+  z-index: 1;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+}
