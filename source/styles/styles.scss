@@ -32,3 +32,9 @@
 @import "./blocks/logo-text.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/copyright.scss";
+<script type="text/javascript">
+
+if(window.opera) {
+         document.write('<link rel="stylesheet" type="text/css" href="style/opera.css" />');
+}
+</script>
